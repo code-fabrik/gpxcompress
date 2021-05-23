@@ -1,0 +1,20 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: ruby:3.0.1
+  volumes:
+  - name: cache
+    path: /drone/.bundle
+  commands:
+  - bundle install --jobs=3 --retry=3
+  - bundle exec ruby compression_test.rb
+  environment:
+    BUNDLE_PATH: /drone/.bundle
+    APP_ENV: test
+
+volumes:
+- name: cache
+  host:
+    path: /tmp/drone/gpxcompress/gems
