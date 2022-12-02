@@ -4,7 +4,7 @@ ruby File.read('.ruby-version').strip
 
 gem 'thin', '1.8.1'
 gem 'sinatra', '2.2.3'
-gem 'nokogiri', '1.13.6'
+gem 'nokogiri', '1.13.9'
 
 group :development, :test do
   gem 'minitest'
