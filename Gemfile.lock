@@ -3,14 +3,14 @@ GEM
   specs:
     daemons (1.4.0)
     eventmachine (1.2.7)
-    mini_portile2 (2.8.1)
+    mini_portile2 (2.8.5)
     minitest (5.14.4)
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
-    nokogiri (1.14.3)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.16.2)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    racc (1.6.2)
+    racc (1.7.3)
     rack (2.2.6.4)
     rack-protection (2.2.3)
       rack
@@ -31,7 +31,7 @@ PLATFORMS
 
 DEPENDENCIES
   minitest
-  nokogiri (= 1.14.3)
+  nokogiri (= 1.16.2)
   sinatra (= 2.2.3)
   thin (= 1.8.1)
 
